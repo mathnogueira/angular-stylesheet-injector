@@ -1,0 +1,17 @@
+{
+  "name": "angular-stylesheet-injector",
+  "authors": [
+    "Matheus Nogueira <matheus.nogueira2008@gmail.com>"
+  ],
+  "description": "Angular provider to inject stylesheet files on demand",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
