@@ -1,6 +1,6 @@
 /**
  * Angular Stylesheet Injector - Css injection on-demand
- * @version 1.0.0
+ * @version 0.9.0
  * @author Matheus Nogueira
  */
 
