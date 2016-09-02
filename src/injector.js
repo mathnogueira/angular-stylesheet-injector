@@ -134,6 +134,7 @@
 			$http.get(stylesheet).then(function(response) {
 				// If stylesheet was found, call the callback passing its content
 				if (response.status == 200) {
+					console.log(stylesheet, 'loaded successfully');
 					callback(stylesheet, response.data);
 				}
 			});
@@ -188,8 +189,10 @@
 		 */
 		function SynchronousHandler(name, content) {
 			if (_debug) console.log(name, 'loaded');
-			// Append content to head
-			appendStylesheet(name, content);
+			if (content) {
+				// Append content to head
+				appendStylesheet(name, content);
+			}
 			// Update loaded files
 			loaded.push(name);
 			// Verify if all files were loaded
